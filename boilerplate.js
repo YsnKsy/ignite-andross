@@ -31,7 +31,7 @@ async function install(context) {
   const perfStart = new Date().getTime()
 
   const name = parameters.first
-  const spinner = print.spin(`using the ${red('Infinite Red')} boilerplate v2 (code name 'Andross')`).succeed()
+  const spinner = print.spin(`using the ${red('Infinite Red')} boilerplate v2 (code name 'Yaska')`).succeed()
 
   // attempt to install React Native or die trying
   const useNpm = !ignite.useYarn
@@ -81,7 +81,7 @@ async function install(context) {
     { template: 'README.md', target: 'README.md' },
     { template: 'ignite.json.ejs', target: 'ignite/ignite.json' },
     { template: '.editorconfig', target: '.editorconfig' },
-    { template: '.babelrc', target: '.babelrc' },
+    { template: 'babel.config.js', target: 'babel.config.js' },
     { template: 'Tests/Setup.js.ejs', target: 'Tests/Setup.js' },
     { template: 'storybook/storybook.ejs', target: 'storybook/storybook.js' },
     { template: '.env.example', target: '.env.example' }
